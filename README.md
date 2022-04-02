@@ -1,5 +1,13 @@
 # Signals handling
 Second assigment in Operating Systems course
 
-## Explanation of the programm
-Creating a multiple signals. By attempting to send one signal it would call other signal and so on.
+## Running Programm:
+```bash
+# Clone the repository
+$ git clone https://github.com/MightyArty/Signals_handling.git
+# Go into the repository
+$ cd Signals_handling
+# Open the terminal on Linux
+$ Run "make"
+$ Run "make run"
+```
