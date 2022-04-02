@@ -2,6 +2,7 @@
 *.d
 my_prog.c
 .vscode
+signal
 # Object files
 *.o
 *.ko

@@ -51,7 +51,7 @@ void sig_handler(int signum)
 {
 	int i=5;
 	int j=0;
-	int k;
+	int k = 1;
 	switch (signum) 
     {
 		case SIGCHLD: // dad is dead
@@ -62,7 +62,7 @@ void sig_handler(int signum)
 		case SIGUSR1: // raise by user signal
 			yellow();
 			printf("I'm the second signal %d / %d\n",i, j);
-			sleep(0.5);
+			sleep(k);
 			k=i/j;
 		case SIGFPE: //div by zero exception
 			purple();
