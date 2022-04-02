@@ -1,6 +1,5 @@
 # Prerequisites
 *.d
-.gitignore
 my_prog.c
 .vscode
 # Object files
