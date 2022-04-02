@@ -3,21 +3,16 @@
 #include <unistd.h>
 #include <string.h>
 #include <signal.h>
-#include <signal.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/ioctl.h>
 #include <dirent.h>
 
+
 /**
- * @brief 
+ * @brief This function is just for highliting the text in the terminal
  * 
  */
-
 void red () {
   printf("\033[1;31m");
 }
