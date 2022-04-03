@@ -56,14 +56,14 @@ void sig_handler(int signum)
 			raise(SIGUSR1);
 		case SIGUSR1: // raise by user signal
 			yellow();
-			printf("I'm the second signal %d / %d\n",i, j);
+			printf("I'm the second signal, trying to divide %d by %d\n",i, j);
 			sleep(k);
 			k=i/j;
 		case SIGFPE: //div by zero exception
 			purple();
 			printf("I'm the third signal, error in opening file\n");
 			black();
-			printf("Trying to open we want good grade file\n");
+			printf("Trying to open 'we want good grade!' file\n");
 			printf("The list of files located on this device:");
 			DIR *d;
   			struct dirent *dir;
@@ -87,7 +87,7 @@ void sig_handler(int signum)
 			green();
 		    printf("I'm the fifth signal\n");
 		    int a[1] = {0};
-			printf("the array is {%d}\n",a[0]);
+			printf("the array is {%d}, trying to assign number to not located space\n",a[0]);
 		    a[2]=1;
 		case SIGSEGV:   //out of bounds exception
 			blue();
